@@ -36,6 +36,7 @@ jobs:
 
       - name: Create dist version tag
         run: |
+          cp .npmignore .gitignore
           git config user.name "GitHub Actions"
           git config user.email "github-actions@users.noreply.github.com"
           git tag ${{ env.RELEASE_VERSION }}-dist

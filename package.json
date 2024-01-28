@@ -1,0 +1,23 @@
+{
+  "name": "auth-sdk-loader-library",
+  "version": "1.0.0",
+  "description": "",
+  "typings": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build:watch": "webpack --mode=production -w",
+    "build": "webpack --mode=production"
+  },
+  "author": "Andrey Filipov <andrey@filipov.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "javascript-obfuscator": "^4.1.0",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-obfuscator": "^3.5.1"
+  }
+}

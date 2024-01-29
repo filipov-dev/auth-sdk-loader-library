@@ -22,7 +22,10 @@ module.exports = {
     filename: '[name].js',
     // eslint-disable-next-line no-undef
     path: path.resolve(__dirname, 'dist'),
+    library: '',
+    libraryExport: '',
     libraryTarget: 'umd',
+    globalObject: 'this',
   },
   plugins: [],
   optimization: {}

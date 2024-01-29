@@ -11,6 +11,10 @@ export const loader = (): Promise<typeof window.FD.auth> => {
       }
 
       script.src = 'https://static.filipov.dev/loaders/auth/index.js';
+
+      const headElement = document.getElementsByName('head')[0];
+
+      headElement.append(script);
     } catch (e) {
       reject(e);
     }

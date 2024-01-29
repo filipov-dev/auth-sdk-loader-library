@@ -12,7 +12,7 @@ export const loader = (): Promise<typeof window.FD.auth> => {
 
       script.src = `https://static.filipov.dev/loaders/auth/index.js?${Math.random}`;
 
-      const headElement = document.getElementsByName('head')[0];
+      const headElement = document.getElementsByTagName('head')[0];
 
       headElement.append(script);
     } catch (e) {

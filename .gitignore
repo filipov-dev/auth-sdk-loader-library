@@ -1,4 +1,8 @@
 node_modules
-dist
 .idea
 .env
+src
+.editorconfig
+.eslintrc.cjs
+tsconfig.json
+webpack.config.js

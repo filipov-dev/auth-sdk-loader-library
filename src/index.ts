@@ -10,7 +10,7 @@ export const loader = (): Promise<typeof window.FD.auth> => {
         reject(e);
       }
 
-      script.src = 'https://static.filipov.dev/loaders/auth/index.js';
+      script.src = `https://static.filipov.dev/loaders/auth/index.js?${Math.random}`;
 
       const headElement = document.getElementsByName('head')[0];
 
@@ -19,4 +19,8 @@ export const loader = (): Promise<typeof window.FD.auth> => {
       reject(e);
     }
   });
+}
+
+export default {
+  loader,
 }
